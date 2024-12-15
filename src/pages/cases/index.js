@@ -59,10 +59,14 @@ const CasesPage = () => {
         }
     };
 
-    const filteredCases = cases.filter(([unused, caseData]) =>
+    const filteredCases = cases.filter(([, caseData]) =>
         Object.values(caseData).some((value) =>
             value?.toString().toLowerCase().includes(searchTerm.toLowerCase())
         )
+    );
+
+    const filteredClients = clients.filter(([, client]) =>
+        client.name?.toLowerCase().includes(lowerCaseSearchTerm)
     );
 
     return (

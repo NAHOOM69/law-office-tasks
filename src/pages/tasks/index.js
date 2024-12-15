@@ -23,6 +23,8 @@ import {
   Hash,
 } from "lucide-react";
 import { useRouter } from "next/router";
+import Link from "next/link";
+
 
 const TasksPage = () => {
   const [taskDetails, setTaskDetails] = useState([]);
@@ -223,11 +225,6 @@ await set(ref(database, `tasks/${newTaskKey}`), filteredNewTask);
           +
           </Link>
       </div>
-
-
-
-
-
 
       <div className="flex justify-between items-center mb-4">
         <input
