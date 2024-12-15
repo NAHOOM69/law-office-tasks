@@ -16,7 +16,7 @@ const EditCase = () => {
     const [status, setStatus] = useState("פתוח");
     const [courtName, setCourtName] = useState(""); // שם בית המשפט
     const [judgeName, setJudgeName] = useState(""); // שם השופט
-    const [clientName, setClientName] = useState(""); // שם הלקוח
+    //const [clientName, setClientName] = useState(""); // שם הלקוח
     const [error, setError] = useState("");
     const router = useRouter();
     const { id } = router.query;
@@ -150,24 +150,24 @@ const EditCase = () => {
                         />
                     </div>
                     <div>
-                        <label className="block font-medium text-right text-gray-700 mb-2">מס' פנימי:</label>
+                        <label className="block font-medium text-right text-gray-700 mb-2">מס פנימי:</label>
                         <input
                             type="text"
                             value={internalNumber}
                             onChange={(e) => setInternalNumber(e.target.value)}
                             className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 text-right"
-                            placeholder="הכנס מס' פנימי"
+                            placeholder="הכנס מס פנימי"
                             dir="rtl"
                         />
                     </div>
                     <div>
-                        <label className="block font-medium text-right text-gray-700 mb-2">מס' תיק בבית המשפט:</label>
+                        <label className="block font-medium text-right text-gray-700 mb-2">מס תיק בבית המשפט:</label>
                         <input
                             type="text"
                             value={courtNumber}
                             onChange={(e) => setCourtNumber(e.target.value)}
                             className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 text-right"
-                            placeholder="הכנס מס' תיק בבית המשפט"
+                            placeholder="הכנס מס תיק בבית המשפט"
                             dir="rtl"
                         />
                     </div>
