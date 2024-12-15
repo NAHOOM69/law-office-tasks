@@ -1,8 +1,12 @@
 import React from "react";
 import { Phone, Mail, MessageSquare } from "lucide-react";
 
-const ClientCard = ({ id, client }) => {
+
+const ClientCard = ({ client }) => {
     const { name, phone, email } = client;
+
+//const ClientCard = ({ id, client }) => {
+//    const { name, phone, email } = client;//
 
     const handlePhoneClick = () => {
         window.location.href = `tel:${phone}`;
