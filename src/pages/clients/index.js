@@ -28,7 +28,7 @@ const ClientsPage = () => {
     // סינון לפי מחרוזת חיפוש
     useEffect(() => {
         const lowerCaseSearchTerm = searchTerm.toLowerCase();
-        const filtered = clients.filter(([unused, client]) =>
+        const filtered = clients.filter(([, client]) =>
             client.name?.toLowerCase().includes(lowerCaseSearchTerm)
         );
         setFilteredClients(filtered);

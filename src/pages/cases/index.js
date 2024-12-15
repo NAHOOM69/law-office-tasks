@@ -65,9 +65,9 @@ const CasesPage = () => {
         )
     );
 
-    const filteredClients = clients.filter(([, client]) =>
-        client.name?.toLowerCase().includes(lowerCaseSearchTerm)
-    );
+   // const filteredClients = clients.filter(([, client]) =>
+   //     client.name?.toLowerCase().includes(lowerCaseSearchTerm)
+   // );
 
     return (
         <div className="p-4 rtl">

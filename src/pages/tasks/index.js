@@ -89,7 +89,7 @@ const TasksPage = () => {
       const newTaskKey = push(newTaskRef).key; // יצירת מזהה ייחודי חדש
       // סינון מאפיינים שאינם מוגדרים
       const filteredNewTask = Object.fromEntries(
-        Object.entries(newTask).filter(([_, value]) => value !== undefined)
+        Object.entries(newTask).filter(([, value]) => value !== undefined)
       );
 
 // שמירת המשימה החדשה
