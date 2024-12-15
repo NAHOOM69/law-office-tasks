@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import { getTaskById, updateTask } from "../../utils/firebase";
 import { X } from "lucide-react";
-import { ref, get, update } from "firebase/database";
+//import { ref, get, update } from "firebase/database";
 //import { database } from "../../../lib/firebase";
 
 

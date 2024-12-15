@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Link from "next/link";
+//import Link from "next/link";
 import ClientCard from "../../components/ClientCard";
 import { getClients } from "../../utils/firebase";
 import { useRouter } from "next/router";
@@ -28,7 +28,7 @@ const ClientsPage = () => {
     // סינון לפי מחרוזת חיפוש
     useEffect(() => {
         const lowerCaseSearchTerm = searchTerm.toLowerCase();
-        const filtered = clients.filter(([_, client]) =>
+        const filtered = clients.filter(([unused, client]) =>
             client.name?.toLowerCase().includes(lowerCaseSearchTerm)
         );
         setFilteredClients(filtered);

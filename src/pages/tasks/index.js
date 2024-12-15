@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { ref, remove, push, set } from "firebase/database";
+//import { ref, remove, push, set } from "firebase/database";
+import { remove, push, set } from "firebase/database";
 import {
   database,
   getTasks,
@@ -214,13 +215,13 @@ await set(ref(database, `tasks/${newTaskKey}`), filteredNewTask);
 
 
             <div className="fixed bottom-4 right-4 z-50">
-        <a
+        <Link
           href="/tasks/new"
           className="bg-blue-500 text-white px-4 py-2 rounded-full shadow-lg hover:bg-blue-600 flex items-center justify-center"
           style={{ width: "60px", height: "60px" }}
         >
           +
-        </a>
+          </Link>
       </div>
 
 

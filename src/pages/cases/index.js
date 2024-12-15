@@ -59,7 +59,7 @@ const CasesPage = () => {
         }
     };
 
-    const filteredCases = cases.filter(([_, caseData]) =>
+    const filteredCases = cases.filter(([unused, caseData]) =>
         Object.values(caseData).some((value) =>
             value?.toString().toLowerCase().includes(searchTerm.toLowerCase())
         )
@@ -101,8 +101,8 @@ const CasesPage = () => {
                         <h2 className="text-lg font-bold text-gray-800">{caseData.clientName}</h2>
                         <p className="text-sm text-gray-600">שם התיק: {caseData.caseName}</p>
                         <p className="text-sm text-gray-600">נושא התיק: {caseData.caseSubject || "לא צויין"}</p>
-                        <p className="text-sm text-gray-600">מס' פנימי: {caseData.internalNumber || "לא צויין"}</p>
-                        <p className="text-sm text-gray-600">מס' תיק בית משפט: {caseData.courtNumber || "לא צויין"}</p>
+                        <p className="text-sm text-gray-600">מס פנימי: {caseData.internalNumber || "לא צויין"}</p>
+                        <p className="text-sm text-gray-600">מס תיק בית משפט: {caseData.courtNumber || "לא צויין"}</p>
                         <p className="text-sm text-gray-600">שם הצד השני: {caseData.opponent || "לא צויין"}</p>
                         <p className="text-sm text-gray-600">שם בית המשפט: {caseData.courtName || "לא צויין"}</p>
                         <p className="text-sm text-gray-600">שם השופט: {caseData.judgeName || "לא צויין"}</p>

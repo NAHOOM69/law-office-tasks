@@ -8,11 +8,11 @@ const NewCase = () => {
     const [clients, setClients] = useState([]);
     const [selectedClient, setSelectedClient] = useState("");
     const [caseName, setCaseName] = useState("");
-    const [caseSubject, setCaseSubject] = useState("");
-    const [internalNumber, setInternalNumber] = useState("");
-    const [courtNumber, setCourtNumber] = useState("");
-    const [opponent, setOpponent] = useState("");
-    const [status, setStatus] = useState("פתוח");
+    //const [caseSubject, setCaseSubject] = useState("");
+    //const [internalNumber, setInternalNumber] = useState("");
+    //const [courtNumber, setCourtNumber] = useState("");
+    //const [opponent, setOpponent] = useState("");
+    //const [status, setStatus] = useState("פתוח");
     const [courtName, setCourtName] = useState(""); // שדה לשם בית המשפט
     const [judgeName, setJudgeName] = useState(""); // שדה לשם השופט
     const [error, setError] = useState("");
