@@ -8,7 +8,7 @@ const NewCase = () => {
     const [clients, setClients] = useState([]);
     const [selectedClient, setSelectedClient] = useState("");
     const [caseName, setCaseName] = useState("");
-    //const [caseSubject, setCaseSubject] = useState("");
+    const [caseSubject, setCaseSubject] = useState("");
     //const [internalNumber, setInternalNumber] = useState("");
     //const [courtNumber, setCourtNumber] = useState("");
     //const [opponent, setOpponent] = useState("");
@@ -112,6 +112,20 @@ const NewCase = () => {
                             dir="rtl"
                         />
                     </div>
+
+                      <div>
+                        <label className="block font-medium text-right text-gray-700 mb-2">נושא התיק:</label>
+                        <input
+                            type="text"
+                            value={caseSubject}
+                            onChange={(e) => setCaseSubject(e.target.value)}
+                            className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 text-right"
+                            placeholder="הכנס את נושא התיק"
+                            dir="rtl"
+                        />
+                    </div>                
+
+
                     {/* שדות עבור שם בית המשפט ושם השופט */}
                     <div>
                         <label className="block font-medium text-right text-gray-700 mb-2">שם בית המשפט:</label>
