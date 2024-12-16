@@ -180,6 +180,11 @@ export const updateTask = async (taskId, updatedData) => {
     }
 };
 
+export const deleteClient = async (clientId) => {
+    const clientRef = ref(database, `clients/${clientId}`);
+    await remove(clientRef);
+};
+
 
 
 
